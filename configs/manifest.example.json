@@ -1,0 +1,11 @@
+[
+  {
+    "id": "material001_seed006_action000",
+    "episode_id": "material001_seed006",
+    "split": "train",
+    "probe_paths": ["episode/I_pre.png", "episode/peak_arrival.png", "episode/I_probe_peak.png", "episode/return_arrival.png", "episode/I_post.png"],
+    "action": [65.0, 1.0, 0.6],
+    "future": "episode/action000/future.png",
+    "eta": 0.0
+  }
+]

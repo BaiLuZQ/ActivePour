@@ -1,0 +1,8 @@
+# Use a separate environment. GeoTaichi is obtained from its upstream source repository.
+taichi==1.6.0
+numpy>=1.24,<2
+scipy>=1.10
+Pillow>=10
+matplotlib>=3.7
+pyevtk
+psutil

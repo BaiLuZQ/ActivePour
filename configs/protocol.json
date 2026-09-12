@@ -1,0 +1,45 @@
+{
+  "generator": {
+    "backbone": "stabilityai/stable-diffusion-3.5-medium",
+    "architecture": "phase_action_v2",
+    "modes": ["pre1", "full5"],
+    "condition_dropout": 0.05,
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "steps_each": 10000,
+    "batch_size": 8,
+    "learning_rate_lora": 0.00003,
+    "learning_rate_condition": 0.0002,
+    "weight_decay": 0.01,
+    "seed": 916,
+    "sample_steps": 28,
+    "sample_seed": 20260919,
+    "selected_steps": {"pre1": 9500, "full5": 10000}
+  },
+  "readout": {
+    "arms": ["latent", "zero", "direct"],
+    "input_dimensions": 1664,
+    "head_parameters": 221441,
+    "direct_total_parameters": 397441,
+    "dropout": 0.15,
+    "weight_decay": 0.001,
+    "steps_each": 10000,
+    "batch_size": 32,
+    "learning_rate": 0.0003,
+    "seeds": [101, 202, 303]
+  },
+  "simulation": {
+    "dt": 0.00000625,
+    "probe_degrees": 35,
+    "probe_rotation_seconds": 0.4,
+    "probe_hold_seconds": 0.6,
+    "post_rest_seconds": 3,
+    "formal_rest_seconds": 3,
+    "action_low": [45, 0.6, 0.1],
+    "action_high": [100, 2, 1.5],
+    "radius_range_m": [0.00425, 0.005],
+    "normal_stiffness": 20000,
+    "backend": "cpu_single_thread_canonical_contacts"
+  },
+  "planning": {"materials": 16, "targets": [0.2, 0.5, 0.8], "coarse": 32, "local": 16, "extra_global": 4}
+}

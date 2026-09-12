@@ -1,0 +1,34 @@
+# Credentials and machine-local configuration must never enter the repository.
+.env
+.env.*
+!.env.example
+*token*
+*credential*
+*_info.md
+*.pem
+*.key
+.ssh/
+.vscode/
+.idea/
+
+# Generated artifacts and environments are external to the source release.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+checkpoints/
+models/
+data/
+runs/
+cache/
+*.pt
+*.pth
+*.safetensors
+*.npz
+*.npy
+*.log
+*.pending

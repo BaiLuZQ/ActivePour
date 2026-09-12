@@ -1,0 +1,55 @@
+{
+  "dataset": {
+    "train": 1392,
+    "validation": 456,
+    "test": 448
+  },
+  "generation": {
+    "pre1": {
+      "selected_step": 9500,
+      "validation_macro_iou": 0.869475,
+      "test_macro_iou": 0.877457,
+      "test_particle_iou": 0.678806,
+      "test_pixel_mae": 0.053819
+    },
+    "full5": {
+      "selected_step": 10000,
+      "validation_macro_iou": 0.886286,
+      "test_macro_iou": 0.884112,
+      "test_particle_iou": 0.692252,
+      "test_pixel_mae": 0.051466
+    }
+  },
+  "readout": {
+    "latent": {
+      "validation_mae": 0.025548,
+      "test_mae": 0.032331,
+      "test_seed_sd": 0.0001,
+      "best_steps": [
+        4400,
+        5400,
+        6300
+      ]
+    },
+    "zero": {
+      "validation_mae": 0.02305,
+      "test_mae": 0.032902,
+      "test_seed_sd": 0.000548,
+      "best_steps": [
+        5300,
+        3300,
+        3400
+      ]
+    },
+    "direct": {
+      "validation_mae": 0.021308,
+      "test_mae": 0.026938,
+      "test_seed_sd": 0.000936,
+      "best_steps": [
+        4400,
+        3500,
+        1100
+      ]
+    }
+  }
+}
