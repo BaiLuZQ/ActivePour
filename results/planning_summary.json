@@ -1,0 +1,25 @@
+{
+  "candidates_per_task": 66,
+  "global_initial": 32,
+  "local_centers": 5,
+  "local_per_center": 6,
+  "global_extra": 4,
+  "unique_selected_protocol_candidates": 2144,
+  "all_computed": {
+    "n": 48,
+    "mae_pp": 3.3932683188060735,
+    "rmse_pp": 4.513232736607586,
+    "within_5pp": 38
+  },
+  "numerically_accepted": {
+    "n": 46,
+    "mae_pp": 3.475139559131564,
+    "rmse_pp": 4.5889434952000885,
+    "within_5pp": 36
+  },
+  "failed_tasks": [
+    "t000_r006_target_020",
+    "t008_r006_target_080"
+  ],
+  "decision_plan_sha256": "dc1848dff1dd5cd5446ba7d6834703072eb2298953bd898b3b916093abdc7bb3"
+}

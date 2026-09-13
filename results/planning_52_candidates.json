@@ -48,34 +48,34 @@
     "episode_id": "t000_r006",
     "target": 0.8,
     "action": [
-      96.479142,
-      1.4707875000000001,
-      0.4118625
+      96.568421,
+      1.58856875,
+      0.26620625000000003
     ],
-    "eta_pred": 0.8012114961942037,
-    "eta_sim": 0.845919068137985,
-    "accepted": true,
+    "eta_pred": 0.7947765588760376,
+    "eta_sim": 0.8259725688504646,
+    "accepted": false,
     "checks": {
       "finite": true,
       "mass": true,
       "planarity": true,
       "overlap": true,
-      "wall_overlap": true,
+      "wall_overlap": false,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.045919068137984964
+    "target_absolute_error": 0.025972568850464506
   },
   {
     "task_id": "t001_r006_target_020",
     "episode_id": "t001_r006",
     "target": 0.2,
     "action": [
-      63.899177,
-      1.09894375,
-      1.16754375
+      63.866691,
+      0.896225,
+      0.96215625
     ],
-    "eta_pred": 0.2039256493250529,
-    "eta_sim": 0.18598919016616142,
+    "eta_pred": 0.19779888788859049,
+    "eta_sim": 0.2113509355658698,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -85,19 +85,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.014010809833838594
+    "target_absolute_error": 0.011350935565869802
   },
   {
     "task_id": "t001_r006_target_050",
     "episode_id": "t001_r006",
     "target": 0.5,
     "action": [
-      81.28979,
-      0.8379562500000001,
-      0.78499375
+      79.774502,
+      1.7358312500000002,
+      1.34830625
     ],
-    "eta_pred": 0.4951055745283763,
-    "eta_sim": 0.5246441757075517,
+    "eta_pred": 0.5074154138565063,
+    "eta_sim": 0.5758424914731993,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -107,19 +107,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.02464417570755173
+    "target_absolute_error": 0.07584249147319932
   },
   {
     "task_id": "t001_r006_target_080",
     "episode_id": "t001_r006",
     "target": 0.8,
     "action": [
-      98.716599,
-      1.91601875,
-      0.18808750000000002
+      98.020322,
+      1.6659937500000002,
+      0.3122125
     ],
-    "eta_pred": 0.8042414983113607,
-    "eta_sim": 0.8317654196311952,
+    "eta_pred": 0.8005061149597168,
+    "eta_sim": 0.8419426843563669,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -129,7 +129,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.03176541963119517
+    "target_absolute_error": 0.04194268435636683
   },
   {
     "task_id": "t002_r006_target_020",
@@ -158,12 +158,12 @@
     "episode_id": "t002_r006",
     "target": 0.5,
     "action": [
-      81.886705,
-      1.32858125,
-      0.7768125
+      83.252031,
+      1.25855625,
+      0.40031875
     ],
-    "eta_pred": 0.5097702940305074,
-    "eta_sim": 0.5144714395257806,
+    "eta_pred": 0.5148324569066366,
+    "eta_sim": 0.5096935993064658,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -173,19 +173,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.01447143952578056
+    "target_absolute_error": 0.00969359930646585
   },
   {
     "task_id": "t002_r006_target_080",
     "episode_id": "t002_r006",
     "target": 0.8,
     "action": [
-      99.708874,
-      1.75386875,
-      0.45085000000000003
+      96.890711,
+      0.6187,
+      1.4215312500000001
     ],
-    "eta_pred": 0.7988434632619222,
-    "eta_sim": 0.8206878982665771,
+    "eta_pred": 0.7977085709571838,
+    "eta_sim": 0.7439615680759433,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -195,19 +195,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.02068789826657702
+    "target_absolute_error": 0.056038431924056775
   },
   {
     "task_id": "t003_r006_target_020",
     "episode_id": "t003_r006",
     "target": 0.2,
     "action": [
-      69.655406,
-      0.74098125,
-      0.27940000000000004
+      67.552616,
+      1.4598250000000002,
+      0.18543125000000002
     ],
-    "eta_pred": 0.19462981323401132,
-    "eta_sim": 0.16830742020664527,
+    "eta_pred": 0.1897172580162684,
+    "eta_sim": 0.15459554173421208,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -217,19 +217,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.03169257979335474
+    "target_absolute_error": 0.04540445826578793
   },
   {
     "task_id": "t003_r006_target_050",
     "episode_id": "t003_r006",
     "target": 0.5,
     "action": [
-      87.608229,
-      0.6466375,
-      0.2588375
+      82.722519,
+      1.167775,
+      0.5137125
     ],
-    "eta_pred": 0.48726237813631695,
-    "eta_sim": 0.49419619150818056,
+    "eta_pred": 0.5103978117307028,
+    "eta_sim": 0.46855367697492456,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -239,7 +239,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.00580380849181944
+    "target_absolute_error": 0.03144632302507544
   },
   {
     "task_id": "t003_r006_target_080",
@@ -268,12 +268,12 @@
     "episode_id": "t004_r006",
     "target": 0.2,
     "action": [
-      65.598705,
-      0.92738125,
-      0.30874375000000004
+      64.874893,
+      1.7631812500000001,
+      0.40811875000000003
     ],
-    "eta_pred": 0.18656810621420541,
-    "eta_sim": 0.2103910288120015,
+    "eta_pred": 0.2125557760397593,
+    "eta_sim": 0.16428341413032763,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -283,19 +283,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.01039102881200149
+    "target_absolute_error": 0.035716585869672385
   },
   {
     "task_id": "t004_r006_target_050",
     "episode_id": "t004_r006",
     "target": 0.5,
     "action": [
-      81.051601,
-      0.6351875,
-      0.7770375
+      85.389763,
+      0.6016250000000001,
+      0.29557500000000003
     ],
-    "eta_pred": 0.5001305341720581,
-    "eta_sim": 0.5797483657957233,
+    "eta_pred": 0.499377836783727,
+    "eta_sim": 0.556474647122279,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -305,19 +305,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.07974836579572331
+    "target_absolute_error": 0.05647464712227901
   },
   {
     "task_id": "t004_r006_target_080",
     "episode_id": "t004_r006",
     "target": 0.8,
     "action": [
-      95.517743,
-      0.63148125,
-      1.3418875000000001
+      99.766253,
+      0.87040625,
+      0.57424375
     ],
-    "eta_pred": 0.7965917587280273,
-    "eta_sim": 0.8450115220624026,
+    "eta_pred": 0.7964061896006266,
+    "eta_sim": 0.8521834331863171,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -327,19 +327,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.045011522062402554
+    "target_absolute_error": 0.05218343318631702
   },
   {
     "task_id": "t005_r006_target_020",
     "episode_id": "t005_r006",
     "target": 0.2,
     "action": [
-      65.395099,
-      1.5769312500000001,
-      0.362875
+      64.889138,
+      1.6025875,
+      0.44459375
     ],
-    "eta_pred": 0.20456265906492868,
-    "eta_sim": 0.1308291805248348,
+    "eta_pred": 0.20252748827139536,
+    "eta_sim": 0.16712942253047608,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -349,19 +349,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.06917081947516521
+    "target_absolute_error": 0.03287057746952393
   },
   {
     "task_id": "t005_r006_target_050",
     "episode_id": "t005_r006",
     "target": 0.5,
     "action": [
-      78.480108,
-      1.5152687500000002,
-      1.4384937500000001
+      80.25067,
+      1.83829375,
+      0.24030625
     ],
-    "eta_pred": 0.5023169418176016,
-    "eta_sim": 0.5222930044805488,
+    "eta_pred": 0.48367146650950116,
+    "eta_sim": 0.4922635931687881,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -371,7 +371,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.022293004480548828
+    "target_absolute_error": 0.007736406831211906
   },
   {
     "task_id": "t005_r006_target_080",
@@ -400,12 +400,12 @@
     "episode_id": "t006_r006",
     "target": 0.2,
     "action": [
-      69.763893,
-      1.8509,
-      0.13590625
+      68.152844,
+      1.7486812500000002,
+      0.610525
     ],
-    "eta_pred": 0.1964138299226761,
-    "eta_sim": 0.19968058908269598,
+    "eta_pred": 0.202038844426473,
+    "eta_sim": 0.17493326971457118,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -415,7 +415,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.0003194109173040305
+    "target_absolute_error": 0.02506673028542883
   },
   {
     "task_id": "t006_r006_target_050",
@@ -444,12 +444,12 @@
     "episode_id": "t006_r006",
     "target": 0.8,
     "action": [
-      97.508056,
-      1.3229625,
-      0.90746875
+      100.0,
+      2.0,
+      0.1
     ],
-    "eta_pred": 0.800135870774587,
-    "eta_sim": 0.8006569562899387,
+    "eta_pred": 0.798990786075592,
+    "eta_sim": 0.7805821565384407,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -459,19 +459,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.0006569562899386705
+    "target_absolute_error": 0.019417843461559392
   },
   {
     "task_id": "t007_r006_target_020",
     "episode_id": "t007_r006",
     "target": 0.2,
     "action": [
-      63.940653,
-      1.7067875000000001,
-      1.0862125
+      64.332187,
+      0.6814125000000001,
+      1.4390875
     ],
-    "eta_pred": 0.20068679749965668,
-    "eta_sim": 0.07090033478745501,
+    "eta_pred": 0.18340842922528586,
+    "eta_sim": 0.10000181073206953,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -481,19 +481,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.129099665212545
+    "target_absolute_error": 0.09999818926793048
   },
   {
     "task_id": "t007_r006_target_050",
     "episode_id": "t007_r006",
     "target": 0.5,
     "action": [
-      80.889731,
-      0.7980875000000001,
-      1.05736875
+      81.174624,
+      1.267775,
+      0.735075
     ],
-    "eta_pred": 0.5018180211385092,
-    "eta_sim": 0.4646667411897072,
+    "eta_pred": 0.5023290316263834,
+    "eta_sim": 0.4804695609647339,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -503,19 +503,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.03533325881029281
+    "target_absolute_error": 0.01953043903526608
   },
   {
     "task_id": "t007_r006_target_080",
     "episode_id": "t007_r006",
     "target": 0.8,
     "action": [
-      96.58467,
-      1.88805625,
-      0.15104375
+      95.027609,
+      0.71369375,
+      1.4073625
     ],
-    "eta_pred": 0.7983651558558146,
-    "eta_sim": 0.7009730317453908,
+    "eta_pred": 0.8060152331988016,
+    "eta_sim": 0.6985332695005335,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -525,19 +525,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.09902696825460922
+    "target_absolute_error": 0.10146673049946653
   },
   {
     "task_id": "t008_r006_target_020",
     "episode_id": "t008_r006",
     "target": 0.2,
     "action": [
-      67.009589,
-      1.451975,
-      0.19765000000000002
+      66.345418,
+      1.1000875,
+      1.2604875
     ],
-    "eta_pred": 0.19465329746405283,
-    "eta_sim": 0.19835046006320972,
+    "eta_pred": 0.23619342843691507,
+    "eta_sim": 0.2740846123886409,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -547,19 +547,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.0016495399367902897
+    "target_absolute_error": 0.07408461238864089
   },
   {
     "task_id": "t008_r006_target_050",
     "episode_id": "t008_r006",
     "target": 0.5,
     "action": [
-      80.114741,
-      1.9968937500000001,
-      1.4591375
+      81.216725,
+      1.1335250000000001,
+      0.8343812500000001
     ],
-    "eta_pred": 0.5004118879636129,
-    "eta_sim": 0.532089508115821,
+    "eta_pred": 0.5035470922787985,
+    "eta_sim": 0.5540525080267149,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -569,41 +569,41 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.03208950811582101
+    "target_absolute_error": 0.05405250802671491
   },
   {
     "task_id": "t008_r006_target_080",
     "episode_id": "t008_r006",
     "target": 0.8,
     "action": [
-      94.280635,
-      1.42251875,
-      1.23008125
+      100.0,
+      2.0,
+      0.1
     ],
-    "eta_pred": 0.8010099530220032,
-    "eta_sim": 0.7998590668744209,
-    "accepted": false,
+    "eta_pred": 0.7943579157193502,
+    "eta_sim": 0.8439032911233773,
+    "accepted": true,
     "checks": {
       "finite": true,
       "mass": true,
       "planarity": true,
       "overlap": true,
-      "wall_overlap": false,
+      "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.00014093312557916793
+    "target_absolute_error": 0.04390329112337721
   },
   {
     "task_id": "t009_r006_target_020",
     "episode_id": "t009_r006",
     "target": 0.2,
     "action": [
-      66.634133,
-      1.8640687500000002,
-      0.25148750000000003
+      65.379554,
+      1.4122812500000002,
+      0.5595687500000001
     ],
-    "eta_pred": 0.2030850648880005,
-    "eta_sim": 0.2401549709694006,
+    "eta_pred": 0.2015094111363093,
+    "eta_sim": 0.21279294415628042,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -613,19 +613,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.0401549709694006
+    "target_absolute_error": 0.012792944156280406
   },
   {
     "task_id": "t009_r006_target_050",
     "episode_id": "t009_r006",
     "target": 0.5,
     "action": [
-      80.396182,
-      1.7568937500000001,
-      0.9687
+      83.499846,
+      0.8085,
+      0.6313000000000001
     ],
-    "eta_pred": 0.5000475843747457,
-    "eta_sim": 0.545869406959524,
+    "eta_pred": 0.5032000144322714,
+    "eta_sim": 0.5343133474615119,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -635,19 +635,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.04586940695952402
+    "target_absolute_error": 0.034313347461511934
   },
   {
     "task_id": "t009_r006_target_080",
     "episode_id": "t009_r006",
     "target": 0.8,
     "action": [
-      99.436295,
-      1.46741875,
-      0.4845125
+      96.332244,
+      1.100225,
+      1.08638125
     ],
-    "eta_pred": 0.802649180094401,
-    "eta_sim": 0.8264481455843184,
+    "eta_pred": 0.7985965808232626,
+    "eta_sim": 0.8063237495954463,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -657,19 +657,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.026448145584318405
+    "target_absolute_error": 0.0063237495954462375
   },
   {
     "task_id": "t010_r006_target_020",
     "episode_id": "t010_r006",
     "target": 0.2,
     "action": [
-      65.587071,
-      1.7385187500000001,
-      1.0545250000000002
+      68.005796,
+      0.68225625,
+      0.2765
     ],
-    "eta_pred": 0.2040451467037201,
-    "eta_sim": 0.14639813135479807,
+    "eta_pred": 0.16150201857089996,
+    "eta_sim": 0.1437858419791615,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -679,19 +679,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.053601868645201944
+    "target_absolute_error": 0.05621415802083851
   },
   {
     "task_id": "t010_r006_target_050",
     "episode_id": "t010_r006",
     "target": 0.5,
     "action": [
-      82.57901,
-      0.89584375,
-      0.65618125
+      81.428063,
+      1.8722687500000001,
+      0.39046250000000005
     ],
-    "eta_pred": 0.4968382914861043,
-    "eta_sim": 0.5101388894995701,
+    "eta_pred": 0.506524940331777,
+    "eta_sim": 0.40735372768432276,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -701,19 +701,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.010138889499570092
+    "target_absolute_error": 0.09264627231567724
   },
   {
     "task_id": "t010_r006_target_080",
     "episode_id": "t010_r006",
     "target": 0.8,
     "action": [
-      98.492711,
-      1.9109625000000001,
-      0.11431875000000001
+      98.266006,
+      1.97331875,
+      0.2295625
     ],
-    "eta_pred": 0.7958852847417196,
-    "eta_sim": 0.7363247677806116,
+    "eta_pred": 0.8001978000005087,
+    "eta_sim": 0.7446547630514091,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -723,19 +723,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.06367523221938842
+    "target_absolute_error": 0.05534523694859095
   },
   {
     "task_id": "t011_r006_target_020",
     "episode_id": "t011_r006",
     "target": 0.2,
     "action": [
-      69.821402,
-      1.29026875,
-      0.1521125
+      68.580554,
+      1.8036,
+      0.39485000000000003
     ],
-    "eta_pred": 0.19967591762542725,
-    "eta_sim": 0.19290865093839393,
+    "eta_pred": 0.19975164532661438,
+    "eta_sim": 0.1720970885241355,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -745,7 +745,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.007091349061606078
+    "target_absolute_error": 0.027902911475864517
   },
   {
     "task_id": "t011_r006_target_050",
@@ -774,12 +774,12 @@
     "episode_id": "t011_r006",
     "target": 0.8,
     "action": [
-      96.97087,
-      0.93614375,
-      1.42836875
+      99.969467,
+      1.9451375000000002,
+      0.6578812500000001
     ],
-    "eta_pred": 0.8026426831881205,
-    "eta_sim": 0.7309214722951752,
+    "eta_pred": 0.7974539796511332,
+    "eta_sim": 0.7724309133320849,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -789,7 +789,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.06907852770482481
+    "target_absolute_error": 0.027569086667915133
   },
   {
     "task_id": "t012_r006_target_020",
@@ -818,12 +818,12 @@
     "episode_id": "t012_r006",
     "target": 0.5,
     "action": [
-      82.117501,
-      1.31058125,
-      0.30656875
+      79.875357,
+      1.9795437500000002,
+      0.6862875
     ],
-    "eta_pred": 0.5038705666859945,
-    "eta_sim": 0.5137807299687578,
+    "eta_pred": 0.49555548032124835,
+    "eta_sim": 0.5513744569062886,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -833,7 +833,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.013780729968757788
+    "target_absolute_error": 0.05137445690628861
   },
   {
     "task_id": "t012_r006_target_080",
@@ -862,12 +862,12 @@
     "episode_id": "t013_r006",
     "target": 0.2,
     "action": [
-      65.49983,
-      1.9163750000000002,
-      1.15593125
+      66.496474,
+      1.48359375,
+      0.5885125
     ],
-    "eta_pred": 0.20563630759716034,
-    "eta_sim": 0.17074983976664468,
+    "eta_pred": 0.20264450212319693,
+    "eta_sim": 0.2346927253910887,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -877,19 +877,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.029250160233355332
+    "target_absolute_error": 0.0346927253910887
   },
   {
     "task_id": "t013_r006_target_050",
     "episode_id": "t013_r006",
     "target": 0.5,
     "action": [
-      81.10799,
-      0.7904562500000001,
-      1.09955625
+      80.971504,
+      0.94134375,
+      1.29235
     ],
-    "eta_pred": 0.4814870357513428,
-    "eta_sim": 0.5131848448405505,
+    "eta_pred": 0.49391119678815204,
+    "eta_sim": 0.5205930263779854,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -899,19 +899,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.013184844840550491
+    "target_absolute_error": 0.020593026377985435
   },
   {
     "task_id": "t013_r006_target_080",
     "episode_id": "t013_r006",
     "target": 0.8,
     "action": [
-      96.988364,
-      0.6844187500000001,
-      1.3714375
+      96.76021,
+      0.6332125000000001,
+      1.4002625
     ],
-    "eta_pred": 0.8024065295855204,
-    "eta_sim": 0.807691762953788,
+    "eta_pred": 0.7984522581100464,
+    "eta_sim": 0.8211689122839397,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -921,19 +921,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.007691762953787928
+    "target_absolute_error": 0.02116891228393969
   },
   {
     "task_id": "t014_r006_target_020",
     "episode_id": "t014_r006",
     "target": 0.2,
     "action": [
-      66.510002,
-      1.5188062500000001,
-      0.97973125
+      66.954999,
+      0.9033625000000001,
+      0.7481875
     ],
-    "eta_pred": 0.19455121457576752,
-    "eta_sim": 0.16930225156105763,
+    "eta_pred": 0.1913328319787979,
+    "eta_sim": 0.16721620622889943,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -943,19 +943,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.03069774843894238
+    "target_absolute_error": 0.03278379377110058
   },
   {
     "task_id": "t014_r006_target_050",
     "episode_id": "t014_r006",
     "target": 0.5,
     "action": [
-      89.78227,
-      0.776775,
-      0.1260125
+      81.856156,
+      1.3398,
+      1.01654375
     ],
-    "eta_pred": 0.5007540186246237,
-    "eta_sim": 0.46429686406070236,
+    "eta_pred": 0.49817440907160443,
+    "eta_sim": 0.4480476565730376,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -965,19 +965,19 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.03570313593929764
+    "target_absolute_error": 0.05195234342696242
   },
   {
     "task_id": "t014_r006_target_080",
     "episode_id": "t014_r006",
     "target": 0.8,
     "action": [
-      97.329339,
-      0.6391375,
-      1.3525562500000001
+      99.762579,
+      1.20024375,
+      0.59584375
     ],
-    "eta_pred": 0.797214130560557,
-    "eta_sim": 0.7498476811481852,
+    "eta_pred": 0.793159564336141,
+    "eta_sim": 0.7627649936496498,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -987,7 +987,7 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.050152318851814814
+    "target_absolute_error": 0.037235006350350264
   },
   {
     "task_id": "t015_r006_target_020",
@@ -1038,12 +1038,12 @@
     "episode_id": "t015_r006",
     "target": 0.8,
     "action": [
-      94.931336,
-      1.928425,
-      1.463575
+      98.923598,
+      1.0343437500000001,
+      1.1686750000000001
     ],
-    "eta_pred": 0.7999858260154724,
-    "eta_sim": 0.6738234838616791,
+    "eta_pred": 0.8032397826512655,
+    "eta_sim": 0.7432722660216518,
     "accepted": true,
     "checks": {
       "finite": true,
@@ -1053,6 +1053,6 @@
       "wall_overlap": true,
       "no_probe_spill": true
     },
-    "target_absolute_error": 0.12617651613832093
+    "target_absolute_error": 0.056727733978348294
   }
 ]

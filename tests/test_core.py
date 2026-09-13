@@ -33,6 +33,10 @@ class CoreTests(unittest.TestCase):
         x=torch.ones(2,1664);n={'mean':torch.full((1664,),.5),'std':torch.ones(1664)}
         y=normalize(x,n,True);self.assertTrue(torch.all(y[:,:640]==.5));self.assertTrue(torch.all(y[:,640:]==0))
 
-    def test_search(self):self.assertTrue(search_tests()['passed'])
+    def test_search(self):
+        result=search_tests()
+        self.assertTrue(result['passed'])
+        self.assertEqual(result['unique_per_task'],66)
+        self.assertEqual(result['local_count'],30)
 
 if __name__=='__main__':unittest.main()

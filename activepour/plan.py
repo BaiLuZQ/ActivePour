@@ -1,4 +1,4 @@
-"""Score 32 global + 16 local + 4 extra actions; never read simulation outcomes."""
+"""Score 32 global + 5 x 6 local + 4 extra actions; never read simulation outcomes."""
 import argparse
 from pathlib import Path
 import torch
@@ -31,7 +31,7 @@ def main():
     if len({torch.load(p,map_location='cpu',weights_only=True)['identity']['seed'] for p in a.heads})!=3:
         raise ValueError('Expected three independently trained seeds')
     out=Path(a.out);out.mkdir(parents=True,exist_ok=True)
-    identity=dict(generator=sha(a.generator),heads=[sha(p) for p in a.heads],bank=sha(a.bank),index=a.index,target=a.target,seed=a.seed)
+    identity=dict(search_protocol='global32_local5x6_extra4_v1',generator=sha(a.generator),heads=[sha(p) for p in a.heads],bank=sha(a.bank),index=a.index,target=a.target,seed=a.seed)
     if (out/'identity.json').exists() and read(out/'identity.json')!=identity:raise ValueError('Search identity changed')
     atomic_json(out/'identity.json',identity)
     @torch.inference_mode()
@@ -51,7 +51,9 @@ def main():
             records.append(dict(c,eta_pred=float(np.mean(obj['values'])),eta_seeds=obj['values']))
         return records
     first=evaluate(coarse(a.seed));extra=refine(first,a.target,a.seed+int(a.target*100))
-    records=first+evaluate(extra['candidates']);winner=rank(records,a.target)[0]
+    records=first+evaluate(extra['candidates'])
+    assert len(records)==66 and len({r['id'] for r in records})==66
+    winner=rank(records,a.target)[0]
     atomic_json(out/'selection.json',dict(identity=identity,candidates=records,winner=winner,
                 note='Select once before simulation. This file contains no simulated discharge labels.'))
     print('Selected action [degrees, rotation seconds, hold seconds]:',winner['action'])

@@ -29,18 +29,18 @@ def rank(records,target):
 def refine(records,target,seed):
     ranked=rank(records,target);centers=[]
     # Prefer well-scored but separated centers in normalized action coordinates.
-    # Relax the distance deterministically only if four cannot be found.
+    # Relax the distance deterministically only if five cannot be found.
     used_threshold=None
     for threshold in [.20,.15,.10,0.]:
         centers=[]
         for r in ranked:
             if all(np.linalg.norm(normalized(r['action'])-normalized(c['action']))>=threshold for c in centers):centers.append(r)
-            if len(centers)==4:break
-        if len(centers)==4:used_threshold=threshold;break
-    assert len(centers)==4
+            if len(centers)==5:break
+        if len(centers)==5:used_threshold=threshold;break
+    assert len(centers)==5
     rng=np.random.default_rng(seed);seen={r['id'] for r in records};new=[]
     for center in centers:
-        for scale in [.05,.05,.12,.12]:
+        for scale in [.05,.05,.05,.12,.12,.12]:
             for _ in range(1000):
                 u=normalized(center['action'])+rng.normal(0,scale,3)
                 u=1-np.abs(np.mod(u,2)-1)  # Reflect instead of clipping onto boundary.
@@ -52,19 +52,19 @@ def refine(records,target,seed):
         c=candidate(u,'global_extra')
         while c['id'] in seen:c=candidate(rng.random(3),'global_extra')
         seen.add(c['id']);new.append(c)
-    assert len(new)==20 and len(seen)==52
+    assert len(new)==34 and len(seen)==66
     return dict(target=target,seed=seed,centers=[r['id'] for r in centers],
         minimum_center_distance=used_threshold,candidates=new)
 def tests():
     x=coarse(25000);assert x==coarse(25000) and x!=coarse(25001)
     records=[dict(c,eta_pred=.1+.8*normalized(c['action'])[0]) for c in x]
     r=refine(records,.5,25050);assert r==refine(records,.5,25050)
-    assert sum(c['kind']=='local' for c in r['candidates'])==16
+    assert sum(c['kind']=='local' for c in r['candidates'])==30
     assert sum(c['kind']=='global_extra' for c in r['candidates'])==4
     for c in x+r['candidates']:
         u=normalized(c['action']);assert np.all(u>=-1e-12) and np.all(u<=1+1e-12)
         assert all(abs(round(t/DT)*DT-t)<1e-10 for t in c['action'][1:])
     # A worse refinement can never evict the coarse incumbent.
     assert rank(records+[dict(c,eta_pred=0.) for c in r['candidates']],.5)[0]['id']==rank(records,.5)[0]['id']
-    return dict(passed=True,coarse_count=32,local_count=16,extra_count=4,unique_per_task=52)
+    return dict(passed=True,coarse_count=32,local_count=30,extra_count=4,unique_per_task=66)
 

@@ -17,7 +17,7 @@ GeoTaichi DEM
                                                   │
                                       small discharge MLP
                                                   │
-                         32 global + 16 local + 4 extra candidates
+                         32 global + 5 x 6 local + 4 extra candidates
                                                   │
                            selected action ──> independent DEM verification
 ```
@@ -63,14 +63,16 @@ Each arm was trained for 10,000 steps with seeds 101, 202 and 303. Each seed use
 
 ### Target-action selection
 
-16 held-out materials × one probe state × targets 20%, 50%, 80% = **48 tasks**. Each task compares **52 candidates**. Reusing the first 32 across targets gives **1,472 unique predictions**, followed by 48 selected-action simulations.
+16 held-out materials × one probe state × targets 20%, 50%, 80% = **48 tasks**. Each task compares **66 candidates: 32 global + 5 diverse centers × 6 local + 4 extra global**. Sharing the first 32 across targets gives **2,144 unique candidate actions across the 16 states**. The generator and latent readout heads are unchanged; compatible cached predictions and unchanged-action simulations are reused.
 
 | Reporting scope | Cases | Target MAE | Target RMSE | Within ±5 percentage points |
 |---|---:|---:|---:|---:|
-| All computed cases, without numerical filtering | 48 | **3.817 pp** | 4.500 pp | 33/48 (68.75%) |
-| Numerically accepted cases only | 46 | 3.861 pp | 4.560 pp | 31/46 (67.39%) |
+| All computed cases, without numerical filtering | 48 | **3.393 pp** | 4.513 pp | 38/48 (79.17%) |
+| Numerically accepted cases only | 46 | 3.475 pp | 4.589 pp | 36/46 (78.26%) |
 
-Two cases failed the wall-overlap guard. They remain in the all-case view with their original failure flags. Counting those as failures gives **31/48 (64.58%)** numerically valid target successes. We do not relabel numerical failures as passes.
+Two cases (`t000` at 20% and `t008` at 80%) failed the wall-overlap guard. They remain in the all-case view with their original failure flags. Counting those as failures gives **36/48 (75.00%)** numerically valid target successes. We do not relabel numerical failures as passes. No materials are excluded for poor prediction performance.
+
+The earlier 52-candidate results remain in `results/planning_52_candidates.json`. This follow-up was performed after inspecting those results, not on a fresh blind test. All-case MAE improved from 3.817 to 3.393 pp, but RMSE did not improve (4.500 to 4.513 pp); a larger search does not remove model bias or guarantee better outcomes for each task.
 
 ![All-case goal-reaching errors](assets/planning_errors.png)
 

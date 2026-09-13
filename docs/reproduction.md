@@ -91,7 +91,9 @@ Training curves contain MSE, while model selection uses validation MAE. Their ab
 
 The three latent-head seeds are averaged for scoring. This differs from the phase-one table, which averages independently evaluated seed metrics. The direct and zero heads do not participate in planning.
 
-For each material, the first 32 actions are 8 box corners plus 24 Latin-hypercube samples. For each target, four good centers are greedily selected with normalized separation 0.20, relaxed to 0.15/0.10/0 only if required. Two local points use Gaussian scale 0.05 and two use 0.12 per center, with boundary reflection and duplicate rejection. Four extra global points are independent per target. Rank by absolute predicted target error; ties prefer shorter actions, then stable ID.
+For each material, the first 32 actions are 8 box corners plus 24 Latin-hypercube samples. For each target, five good centers are greedily selected with normalized separation 0.20, relaxed to 0.15/0.10/0 only if required. Three local points use Gaussian scale 0.05 and three use 0.12 per center, with boundary reflection and duplicate rejection. Four extra global points are independent per target. This gives 32 + 5 x 6 + 4 = 66 unique candidates per task. Rank by absolute predicted target error; ties prefer shorter actions, then stable ID.
+
+The 66-candidate follow-up preserves all 16 materials and the frozen models. Its 2,144 candidate/state pairs are not 2,144 newly generated samples: compatible old predictions were reused. The workstation cache also retains old candidates outside the new search sets; cache-file count is not the candidate budget. Published `planning.json` and `planning_summary.json` describe this follow-up; `planning_52_candidates.json` preserves the earlier experiment. Numerical failure flags are retained in both.
 
 The original 48-task experiment used one common noise seed, serial sampling after a batch-equivalence check, and one selected-action simulation per task. Predictions/candidates were committed before simulation. No target-specific retraining, true-result reselection or threshold relaxation occurred.
 
@@ -101,6 +103,7 @@ All 48 task records are published. `t000_r006_target_020` and `t000_r006_target_
 
 - Five-frame generator: `5f365da168c248eedf5afd9614ef6fcdc8147337913ec13fa3ff469f1dbd8d88`
 - Accepted data release: `d7be851e37361ce11f78051be120bfa6981df74743b87023e60f759482b2b232`
-- Decision-plan fingerprint: `4e9871454e0797c7fed61b95e13e04f5b230f57049645234a3ba23ad12244589`
+- Current 66-candidate decision-plan fingerprint: `dc1848dff1dd5cd5446ba7d6834703072eb2298953bd898b3b916093abdc7bb3`
+- Earlier 52-candidate decision-plan fingerprint: `4e9871454e0797c7fed61b95e13e04f5b230f57049645234a3ba23ad12244589`
 
 These identify the archived results, not a public checkpoint download. `results/source_hashes.json` records the upstream first-party inputs used in the export; files with portable interface edits need not match those original hashes.
